@@ -20,6 +20,7 @@ html, body{
  }
 
 
+
 /* GRID */
 .container {
   margin-right: auto;
@@ -43,6 +44,7 @@ html, body{
   min-height: 1px;
   margin: 0 2% 20px;
 }
+
 
 @media (min-width: 480px) {
   .container {
@@ -304,6 +306,11 @@ header .hero img {
   text-align: left;
   font-size:13px;
   margin-top: 30px;
+}
+
+.testimonials li.alter {
+  float: left;
+  margin-top: 20px;
 }
 
 /* ENTICE */
