@@ -27,8 +27,6 @@ img {
     margin-top: 9px;
 }
 
-
-
 /* GRID */
 .container {
   margin-right: auto;
@@ -489,6 +487,16 @@ header .hero img {
     width:16px;
     text-align: center;
     margin-right:8px;
+  }
+
+
+
+  /* Insert Active HERE */
+  .left-nav .items a.active {
+    background-color: #F7F8FA;
+    color: #091FC2;
+    padding: 0 4em 0 0;
+    cursor: default;
   }
 
   /* LEFT NAVBAR SETTINGS */
