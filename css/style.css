@@ -3,7 +3,7 @@ html, body{
   }
  body {
    font-family: "Raleway", Helvetica, Arial, sans-serif;
-   color:#333333;
+   color:#FFFFFF;
   }
  h1, h2, h3, h4, h5, h6 {
    font-family: "Open+Sans", Helvetica, Arial, sans-serif;
@@ -445,16 +445,46 @@ header .hero img {
     background:#F7F7F7;
   }
   .left-nav {
-    height: 100vh;
-    width:14.66666667%;
-    color:#FFFFFF;
+    height: 100%;
+    width:280px;
+    position:absolute;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transform: translate(-280px,0);
+      -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+      -o-transform: translate(-280px,0); /** Opera **/
+      -moz-transform: translate(-280px,0); /** Firefox **/
+  }
+  .left-nav.open {
+    display:block;
+    width:280px;
     background: #34495E;
     background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
-    float:left;
-    position: fixed;
-    display:block;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transform: translate(0,0);
+      -webkit-transform: translate(0,0); /** Chrome & Safari **/
+      -o-transform: translate(0,0); /** Opera **/
+      -moz-transform: translate(0,0); /** Firefox **/
+      z-index: 100;
+    }
+  .hamburger {
+    position:absolute;
+    z-index: 1000;
+    background:#34495E;
+    color:#FFF;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    left: 5px;
+    top: 15px;
   }
-  .left-nav .site-logo {
+ .left-nav .site-logo {
     padding:20px 0;
     background:#34495E;
     display:block;
@@ -491,13 +521,14 @@ header .hero img {
 
 
 
-  /* Insert Active HERE */
+  /* Insert Active HERE
   .left-nav .items a.active {
     background-color: #F7F8FA;
     color: #091FC2;
     padding: 0 4em 0 0;
     cursor: default;
   }
+  */
 
   /* LEFT NAVBAR SETTINGS */
   .left-nav .settings {
@@ -653,4 +684,27 @@ header .hero img {
       width:23%;
       margin:0 1% 25px;
     }
-  }
+    .left-nav {
+      height: 100vh;
+      width:14.66666667%;
+      color:#FFFFFF;
+      background: #34495E;
+      background-image: linear-gradient(206deg, #5F81A3 0%, #34495E 94%);
+      float:left;
+      position: fixed;
+      display:block;
+      transform: translate(0,0);
+      -webkit-transform: translate(0,0); /** Chrome & Safari **/
+      -o-transform: translate(0,0); /** Opera **/
+      -moz-transform: translate(0,0); /** Firefox **/
+    }
+    .left-nav.open {
+      width:14.66666667%;
+      transform: translate(0,0);
+      -webkit-transform: translate(0,0); /** Chrome & Safari **/
+      -o-transform: translate(0,0); /** Opera **/
+      -moz-transform: translate(0,0); /** Firefox **/
+    }
+    .hamburger {
+      display:none;
+    }
