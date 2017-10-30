@@ -482,7 +482,7 @@ header .hero img {
     padding: 10px 15px;
     border-radius: 4px;
     left: 5px;
-    top: 15px;
+    top: 23px;
   }
  .left-nav .site-logo {
     padding:20px 0;
@@ -557,10 +557,13 @@ header .hero img {
   .left-nav .settings a {
     color:#FFFFFF;
     text-decoration: none;
-    text-align: right;
-    float: right;
+    text-align: left;
+    float: left;
     margin-right:10px;
     margin-top:19px;
+  }
+  .left-nav .settings .account li:first-child a {
+    margin-top: 0;
   }
 
   /* CONTENT */
