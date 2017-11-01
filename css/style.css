@@ -530,6 +530,9 @@ header .hero img {
   .content .header > a {
     float:right;
   }
+  .content .header ul > li {
+    padding-top: 12px;
+  }
   .content-item {
     width:96%;
     margin:0 2% 25px;
