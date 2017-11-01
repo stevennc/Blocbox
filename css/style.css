@@ -278,8 +278,6 @@ header .hero img {
   margin:0;
 }
 
-/* Help understanding how this triangle is created */
-
 .testimonials blockquote:after {
   top: 100%;
   left: 13%;
@@ -364,104 +362,25 @@ header .hero img {
    align: right;
   }
 
- @media (min-width: 425px) {
-    .container {
-     width: 480px
-    }
-  }
 
- @media (min-width: 768px) {
-    .container {
-     width: 750px;
-    }
-    footer {
-      height: 35vh;
-     }
-    header nav .one-half:nth-of-type(2) {
-        width: 66%;
-        padding-top: 10px;
-  }
-
-  @media (min-width: 992px) {
-    .container {
-      width: 970px;
-    }
-    .one-half {
-      width: 46%;
-    }
-    .one-third {
-      width: 29.33333%;
-    }
-   .one-fourth {
-     width: 21%;
-    }
-    .one-half, .one-third, .one-fourth {
-      margin: 0px 2% 14px;
-      text-align: center;
-    }
-    footer {
-     background-color: #34495E;
-     height: 24vh;
-    }
-    footer p, footer nav ul{
-     padding: 2em 0;
-     text-align: left;
-    }
-    footer .logo {
-     padding: 2em 0 2em 1.5em;
-    }
-    footer .left-footer-block {
-      padding: 0 0 0 0;
-     }
-
-    footer .middle-footer-block {
-      padding: 0 0 0 0;
-      float: '';
-    }
-    footer .right-footer-block {
-      padding: 10px 0 0 0;
-      float: '';
-    }
-    header nav .one-half:nth-of-type(1) {
-        width: auto;
-        float: '';
-        padding-left: 10px;
-    }
-    header nav .one-half:nth-of-type(2) {
-        width: auto;
-        float: right;
-        text-align: right;
-        padding: 8px 10px 0 0;
-    }
-  }
- @media(min-width: 1200px) {
+/* Added 103117
+  @media (min-width: 320px) {
    .container {
-       with:1170px;
+    width: 750px;
+   }
+   footer {
+     height: 35vh;
     }
-    header nav {
-      padding:1em 0;
-    }
-    header nav .one-half {
-      width: 0;
-      text-align: left;
-    }
-    header nav .one-half:nth-of-type(2) {
-        width: 96%;
-    }
-    header nav .one-half:nth-of-type(1) {
-        width: auto;
-        float: '';
-        padding-left: 10px;
-    }
-    header nav .one-half:nth-of-type(2) {
-        width: auto;
-        float: right;
-        text-align: right;
-        padding: 9px 10px 0 0;
-    }
-  }
+   header nav .one-half:nth-of-type(2) {
+       width: 66%;
+       padding-top: 10px;
+ }
 
-  /* DASHBOARD */
+ */
+
+
+/* DASHBOARD */
+
   .dashboard {
     background:#F7F7F7;
   }
@@ -574,6 +493,7 @@ header .hero img {
     padding-top: 8px;
     font-weight: 400;
     margin:10px 0 0 10px;
+    color: #FFFFFF;
   }
   .left-nav .settings a {
     color:#FFFFFF;
@@ -676,6 +596,7 @@ header .hero img {
       float:left;
       display:block;
     }
+
   }
   /* Tablets */
   @media (min-width:768px) {
@@ -685,6 +606,9 @@ header .hero img {
       width:90%;
       position: relative;
     }
+    .container {
+     width: 750px;
+    }
     .content > .container {
       width:700px;
     }
@@ -692,9 +616,69 @@ header .hero img {
       width:31.33333%;
       margin:0 1% 25px;
     }
+    .left-nav .settings p {
+      color:#FFFFFF;
+    }
+    footer {
+      height: 35vh;
+     }
+    header nav .one-half:nth-of-type(2) {
+      width: 66%;
+      padding-top: 8px;
+    }
   }
   /* Laptops and Desktops */
   @media (min-width:992px) {
+    .container {
+      width: 970px;
+    }
+    .one-half {
+      width: 46%;
+    }
+    .one-third {
+      width: 29.33333%;
+    }
+   .one-fourth {
+     width: 21%;
+    }
+    .one-half, .one-third, .one-fourth {
+      margin: 0px 2% 14px;
+      text-align: center;
+    }
+    footer {
+     background-color: #34495E;
+     height: 24vh;
+    }
+    footer p, footer nav ul{
+     padding: 2em 0;
+     text-align: left;
+    }
+    footer .logo {
+     padding: 2em 0 2em 1.5em;
+    }
+    footer .left-footer-block {
+      padding: 0 0 0 0;
+     }
+
+    footer .middle-footer-block {
+      padding: 0 0 0 0;
+      float: '';
+    }
+    footer .right-footer-block {
+      padding: 10px 0 0 0;
+      float: '';
+    }
+    header nav .one-half:nth-of-type(1) {
+        width: auto;
+        float: '';
+        padding-left: 10px;
+    }
+    header nav .one-half:nth-of-type(2) {
+        width: auto;
+        float: right;
+        text-align: right;
+        padding: 8px 10px 0 0;
+    }
     .content {
       padding:1.5em 1%;
       float:right;
@@ -732,3 +716,31 @@ header .hero img {
     .hamburger {
       display:none;
     }
+  }
+
+  @media(min-width: 1200px) {
+    .container {
+        with:1170px;
+     }
+     header nav {
+       padding:1em 0;
+     }
+     header nav .one-half {
+       width: 0;
+       text-align: left;
+     }
+     header nav .one-half:nth-of-type(2) {
+         width: 96%;
+     }
+     header nav .one-half:nth-of-type(1) {
+         width: auto;
+         float: '';
+         padding-left: 10px;
+     }
+     header nav .one-half:nth-of-type(2) {
+         width: auto;
+         float: right;
+         text-align: right;
+         padding: 9px 10px 0 0;
+     }
+   }
