@@ -432,6 +432,7 @@ header .hero img {
   }
   .left-nav .items {
     padding:0 6%;
+    overflow: hidden;
   }
   .left-nav .items p {
     font-weight: 600;
@@ -459,16 +460,20 @@ header .hero img {
     margin-right:8px;
   }
 
-
-
-  /* Insert Active HERE
+/* ALL ITEMS ACTIVE */
   .left-nav .items a.active {
-    background-color: #F7F8FA;
-    color: #091FC2;
-    padding: 0 4em 0 0;
+    float: left;
+    position: relative;
+    right: 11.5px;
+    bottom: 10px;
+    display: inline-block;
+    background-color: #22303E;
+    color: #FFF;
+    width: 100%;
+    padding: 10px 17px 10px 12px;
     cursor: default;
   }
-*/
+    /*padding: 10px 17px 10px 0;*/
 
   /* LEFT NAVBAR SETTINGS */
   .left-nav .settings {
