@@ -468,7 +468,7 @@ header .hero img {
     padding: 0 4em 0 0;
     cursor: default;
   }
-  */
+*/
 
   /* LEFT NAVBAR SETTINGS */
   .left-nav .settings {
@@ -502,6 +502,10 @@ header .hero img {
     float: left;
     margin-right:10px;
     margin-top:19px;
+  }
+/* Adjusting All Items text */
+  .left-nav .items ul li:first-child i {
+    margin-right: 12.5px;
   }
   .left-nav .settings .account li:first-child a {
     margin-top: 0;
